@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* * ------------ Base line ------------ * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+html {
+  font-size: 62%;
+}
+
+body {
+  background-color: #212525;
+}
+
+/* * ------------ Theme ---------------- * */
+
+/* * ------------ Layout --------------- * */
+.container {
+  padding: 4rem;
+  font-size: 1.5rem;
+}
+
+.p-1 {
+  padding: 0 0 0 1.5rem;
+}
+
+.heading {
+  font-size: 4.5rem;
+  text-align: center;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* * ------------ Module / Reusable ---- * */
+.main-btn {
+  background-color: darkcyan;
+  text-decoration: none;
+  width: max-content;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: #cacaca;
+    background: transparent;
+    outline: 2px solid darkcyan;
+  }
+}
+
+.icons {
+  width: 3.5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2) translateY(-0.5rem);
+  }
+}
+
+main {
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* * ------------ States --------------- * */
+
+/***** Navbar Section *****/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  & span {
+    color: darkturquoise;
+  }
+}
+
+.navbar {
+  & ul {
+    display: flex;
+    gap: 2rem 4rem;
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  & li {
+    overflow: hidden;
+  }
+
+  & a {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &::after {
+      content: " ";
+      width: 100%;
+      border-bottom: 2px solid darkcyan;
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover::after {
+      left: 0;
+    }
+
+    &:hover {
+      color: rgb(7, 173, 173);
+    }
+  }
+}
+
+.menu {
+  font-size: 2.5rem;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+
+  & i {
+    position: absolute;
+    transform: translateY(-0.9rem);
+  }
+}
+/***** End Navbar Section *****/
+
+/***** Header Section *****/
+header {
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+
+  & .profession {
+    width: max-content;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    line-height: 4.5rem;
+
+    & h3 {
+      font-size: 2.2rem;
+      position: absolute;
+      top: 7rem;
+      color: darkcyan;
+    }
+  }
+}
+
+.profile-pic {
+  width: 30rem;
+  background: linear-gradient(100deg, transparent 50%, darkcyan);
+  border-radius: 50%;
+  padding: 0.9rem;
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.profile .buttons {
+  display: flex;
+  gap: 3rem;
+
+  & button {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  & .my-cv {
+    background-color: #333;
+    box-shadow: 0 0 1px 1px #333;
+
+    &:hover {
+      background-color: chocolate;
+      color: #333;
+    }
+  }
+
+  & .hire-me {
+    background-color: darkcyan;
+    box-shadow: 0 0 1px 0 darkcyan;
+
+    &:hover {
+      background-color: #cacaca;
+      color: rgb(5, 139, 139);
+    }
+  }
+}
+
+.profile-icons {
+  ul {
+    padding-left: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+}
+/***** End Header Section *****/
+
+main {
+  gap: 5rem;
+  width: 100%;
+}
+
+/***** About Section *****/
+
+.about-me {
+  letter-spacing: 1px;
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: 300;
+  width: 80%;
+  border-radius: 1rem;
+
+  & dl {
+    display: grid;
+    gap: 1rem;
+  }
+}
+/***** End About Section *****/
+
+/***** Project Section *****/
+
+.my-projects {
+  width: 100%;
+  display: grid;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+  .project-description {
+    padding: 2rem;
+    width: 40%;
+  }
+
+  .project-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .project-img {
+    width: 40%;
+  }
+}
+
+/***** End Project Section *****/
+
+/***** Contact Section *****/
+.my-contact {
+  background-image: linear-gradient(22deg, #48888f, #212525 50%);
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 5rem auto;
+
+  & input,
+  & textarea,
+  & button {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    min-width: 30rem;
+    max-width: 70rem;
+    color: #000;
+    border-radius: 0.3rem;
+    background-color: lightcyan;
+  }
+}
+
+.my-contact form {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  width: 100%;
+
+  & fieldset {
+    outline: none;
+    border: none;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  & textarea {
+    resize: vertical;
+    min-height: 20rem;
+  }
+
+  & button {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: darkturquoise;
+    text-shadow: -2px -1px 3px rgb(255, 255, 25);
+  }
+}
+
+/***** End Contact Section *****/
+
+/***** footer Section *****/
+footer {
+  font-size: 1.8rem;
+  color: #cacaca;
+  padding: 2rem;
+
+  & p {
+    text-align: center;
+  }
+}
+/***** End footer Section *****/
+
+/* * ------------ Responsive ----------- * */
+@media (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .project-description {
+      width: 84%;
+    }
+    .project-img {
+      width: 80%;
+    }
+
+    .project-btn {
+      position: absolute;
+      bottom: -7%;
+      left: 25%;
+    }
+  }
+}
+@media (max-width: 950px) {
+  nav {
+    position: relative;
+
+    & .logo {
+      width: 100%;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    & .navbar {
+      & ul {
+        position: absolute;
+        position: fixed;
+        right: -100%;
+        top: 18%;
+        transition: all 0.5s ease-in-out;
+        background-color: rgb(0, 68, 68);
+        width: 100%;
+        padding: 10rem;
+        height: 100vh;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    & .navbar a {
+      background-color: lightcyan;
+      color: rgb(0, 0, 0);
+      display: block;
+      width: 20rem;
+      padding: 1rem;
+      border-radius: 0.3rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .menu {
+    visibility: visible;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+  }
+
+  header {
+    margin-top: 3rem;
+    flex-direction: column;
+
+    & .profile {
+      order: 2;
+    }
+
+    & .profile-pic {
+      order: 1;
+      width: 25rem;
+      margin-bottom: 3rem;
+    }
+
+    & .buttons {
+      & .my-cv,
+      .hire-me {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  main {
+    margin-top: 8rem;
+
+    .about-me {
+      width: 96%;
+      border-radius: 0;
+      padding: 2rem;
+    }
+
+    .my-projects {
+      gap: 8rem;
+    }
+
+    #projects {
+      padding: 0;
+    }
+
+    .project {
+      width: 85vw;
+      filter: drop-shadow(0 0 10rem #3c3f3f);
+      transition: transform 0.3s ease-in;
+
+      .project-btn {
+        transform: translate(0%, 70%);
+        left: 0;
+
+        & a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .project-description {
+        width: 100%;
+        min-width: 80vw;
+        padding: 0;
+      }
+
+      .project-img {
+        width: 100%;
+        min-width: 80vw;
+        padding-top: 1rem;
+      }
+
+      &:hover {
+        scale: 1.01;
+      }
+    }
+  }
+
+  .profile-icons ul {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+}
+
+/* * ------------ Keyframes ------------ * */

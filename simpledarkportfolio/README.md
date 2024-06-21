@@ -1,4 +1,4 @@
-# Simple Dark Portfolio
+# My Personal Portfolio
 
 ## Preview
 ![Website Preview img](img/preview.png)
@@ -10,7 +10,7 @@
 
 ## Preview
 
-<a href="https://codebyfaisal.github.io/portfolios/simpledarkportfolio/">Portfolio Preview</a>
+<a href="https://codebyfaisal.github.io/portfolio.github.io/">Portfolio Preview</a>
 
 ## Technologies Used
 
@@ -19,8 +19,15 @@
 
 ## How to Use
 
-1. Download the zip file
-2. Extract files in your Computer.
+1. Clone this repository.
+2. Open the respective HTML files in your preferred web browser.
+3. Explore the different pages and interactions to experience the website.
+
+## Future Improvements
+
+- Incorporate JavaScript to add more interactive elements.
+- Implement responsiveness for various screen sizes and devices.
+- Enhance accessibility features for a better user experience.
 
 Feel free to contribute or provide feedback!
 
