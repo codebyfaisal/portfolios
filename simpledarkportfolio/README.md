@@ -19,7 +19,7 @@
 
 ## How to Use
 
-1. Download new release <a href="https://codebyfaisal.github.io/portfolios/simpledarkportfolio/">Simple Dark Portfolio</a>.
+1. Download new release <a href="https://github.com/codebyfaisal/portfolios/releases/tag/simpledarkportfolio">Simple Dark Portfolio</a>.
 2. Exrtact *simpledarkportfolio.zip* file
 3. Now use it...
    
