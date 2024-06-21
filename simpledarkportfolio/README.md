@@ -19,9 +19,8 @@
 
 ## How to Use
 
-1. Clone this repository.
-2. Open the respective HTML files in your preferred web browser.
-3. Explore the different pages and interactions to experience the website.
+1. Download the zip file
+2. Extract files in your Computer.
 
 Feel free to contribute or provide feedback!
 
