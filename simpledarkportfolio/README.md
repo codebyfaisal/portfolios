@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# Simple Dark Portfolio
 
 ## Preview
 ![Website Preview img](images/preview.png)
@@ -19,8 +19,8 @@
 
 ## How to Use
 
-1. Download newrelease simpledarkportfolio.
-2. Exrtact *simpledarkportfolio.rar* file
+1. Download new release <a href="https://codebyfaisal.github.io/portfolios/simpledarkportfolio/">Simple Dark Portfolio</a>.
+2. Exrtact *simpledarkportfolio.zip* file
 3. Now use it...
    
 Feel free to contribute or provide feedback!
