@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    --color-body: #0d0e12;
+    --color-heading: #ffffff;
+    --color-para: #ffffffe7;
+    --color-base: #1f1f2e;
+    --color-base2: #282a36;
+    --color-brand: #8a2be2;
+    --color-brand2: #06b9b9;
+    --sidebar-width: 26rem;
+    --font-base: "Bai Jamjuree", sans-serif;
+    --gradient-brand: linear-gradient(135deg, #8a2be2, #06b9b9);
+    --gradient2-brand: linear-gradient(145deg, #892be2c2, #06b9b9c5);
+    --sidebar: linear-gradient(#1f1f2ee7, #1f1f2ee8), url(../images/sidebar.jpg);
+}

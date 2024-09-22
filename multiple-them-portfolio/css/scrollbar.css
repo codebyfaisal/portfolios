@@ -1,0 +1,42 @@
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-para);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-brand);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand2);
+}
+
+/* Firefox */
+body {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: var(--color-brand) var(--color-body); /* thumb and track */
+}
+/* Optional: Custom properties for Firefox cross-browser consistency */
+body {
+    --scrollbar-thumb: var(--color-brand);
+    --scrollbar-track: var(--color-body);
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand2);
+}
