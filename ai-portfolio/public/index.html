@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="./icons/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Muhammad Faisal | Web Developer</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      referrerpolicy="no-referrer"
+    />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./styles/chatbot.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="scroll-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <h1 class="logo"><span>C</span>ODEBY<span>F</span>AISAL</h1>
+        <ul class="navlinks">
+          <li><a data-scroll-to="hero">HOME</a></li>
+          <li><a data-scroll-to="services">SERVICES</a></li>
+          <li><a data-scroll-to="projects">PROJECTS</a></li>
+          <li><a data-scroll-to="about">ABOUT</a></li>
+          <li class="nav-contact">
+            <a data-scroll-to="contact">Let's Talk</a>
+          </li>
+        </ul>
+        <button class="navbar-button" type="button">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-xmark hidden"></i>
+        </button>
+      </div>
+      <button class="theme-toggler">
+        <img src="./icons/light.png" class="light-theme-icon" />
+        <img src="./icons/dark.png" class="dark-theme-icon" />
+      </button>
+    </nav>
+
+    <header class="hero container finisher-header" id="hero">
+      <div class="hero-content">
+        <h1 class="section-heading">
+          <p style="font-size: 1.5rem">I'm</p>
+          Muhammad Faisal
+          <span class="typewriter">Web Developer</span>
+        </h1>
+        <a data-scroll-to="projects" class="primary-btn"
+          ><span>Portfolio</span></a
+        >
+      </div>
+      <div class="profile-image">
+        <img src="./images/profile.webp" alt="MuhammadFaisal image" />
+      </div>
+      <div class="dot-pattern"></div>
+    </header>
+
+    <main>
+      <section id="services">
+        <div class="container">
+          <h2 class="section-heading">SERV<span>I</span>CES</h2>
+          <div class="services-container">
+            <div class="service">
+              <i class="fa-solid fa-laptop"></i>
+              <h3>Full Stack Web Development</h3>
+              <p>
+                Building end-to-end web applications using modern frontend
+                technologies and backend frameworks like Node.js and Express,
+                ensuring scalable and efficient solutions.
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-database"></i>
+              <h3>MongoDB Database Solutions</h3>
+              <p>
+                Designing and managing MongoDB databases for efficient data
+                storage, retrieval, and scalability, ensuring your application's
+                data is secure and well-organized.
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-code"></i>
+              <h3>API Development with Node.js</h3>
+              <p>
+                Developing robust RESTful APIs using Express and Node.js,
+                enabling seamless communication between the frontend, backend,
+                and third-party services.
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-file-code"></i>
+              <h3>Figma to Full Stack Implementation</h3>
+              <p>
+                Converting Figma designs into fully functional websites or web
+                applications, including frontend development, backend logic, and
+                database integration.
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h3>E-commerce Development</h3>
+              <p>
+                Building secure and scalable e-commerce platforms with Node.js
+                and Express, integrating payment gateways, shopping carts, and
+                dynamic product management.
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Cloud Deployment</h3>
+              <p>
+                Deploying and managing web applications on cloud platforms like
+                Heroku, AWS, or Vercel, ensuring high availability, scalability,
+                and performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-heading">RECENT <span>PROJECTS</span></h2>
+          <div class="projects-container">
+            <div class="project">
+              <div class="project-info">
+                <h1>DevDeep Blog</h1>
+                <p>
+                  DevDeepBlog is a comprehensive full-stack personal blogging platform designed with a sleek, responsive interface. It empowers users to effortlessly create, read, update, and delete blog posts, manage their subscriber base, and seamlessly handle email notifications.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://devdeepblog.netlify.app/"
+                    target="_blank"
+                    class="primary-btn"
+                    ><span>View Live</span></a
+                  >
+                  <a
+                    href="https://github.com/codebyfaisal/devdeepblog"
+                    target="_blank"
+                    class="secondary-btn"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div class="project-img">
+                <img alt="E-commerce Project" src="./images/project-4.avif" />
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-info">
+                <h1>Primebazar🛒✨(Full Stack)</h1>
+                <p>
+                  Prime Bazaar is a full-stack e-commerce website designed to
+                  provide a seamless shopping experience for customers while
+                  offering administrative capabilities to manage products,
+                  orders. The application is built using advanced technologies,
+                  ensuring both performance and scalability.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://primebazar.vercel.app/"
+                    target="_blank"
+                    class="primary-btn"
+                    ><span>View Live</span></a
+                  >
+                  <a
+                    href="https://github.com/codebyfaisal/primebazar"
+                    target="_blank"
+                    class="secondary-btn"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div class="project-img">
+                <img alt="E-commerce Project" src="./images/project-3.avif" />
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-info">
+                <h1>Restaurant Website</h1>
+                <p>
+                  A sleek, responsive landing page for a restaurant, designed to
+                  showcase its offerings and ambiance. The website features an
+                  easy-to-use reservation form, allowing customers to book
+                  tables directly. The design emphasizes simplicity and
+                  elegance, ensuring the restaurant’s brand and menu are the
+                  focal points while maintaining optimal performance on all
+                  devices.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://codebyfaisal.github.io/sunrisecafe/"
+                    target="_blank"
+                    class="primary-btn"
+                    ><span>View Live</span></a
+                  >
+                  <a
+                    href="https://github.com/codebyfaisal/sunrisecafe"
+                    target="_blank"
+                    class="secondary-btn"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div class="project-img">
+                <img alt="Restaurant Project" src="./images/project-2.avif" />
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-info">
+                <h1>E-commerce Website</h1>
+                <p>
+                  Fully responsive, multi-page e-commerce website with a
+                  seamless user experience. The project included key features
+                  like an intuitive product catalog, a functional add-to-cart
+                  system, and dynamic product pages. Built with modern frontend
+                  technologies, this project focuses on clean design, smooth
+                  navigation, and fast load times across all devices, ensuring
+                  an engaging shopping experience for users.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://codebyfaisal.github.io/gadgethub/"
+                    target="_blank"
+                    class="primary-btn"
+                    ><span>View Live</span></a
+                  >
+                  <a
+                    href="https://github.com/codebyfaisal/gadgethub"
+                    target="_blank"
+                    class="secondary-btn"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div class="project-img">
+                <img alt="E-commerce Project" src="./images/project-1.avif" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about-container">
+          <h1 class="section-heading outer">ABOUT <span>ME</span></h1>
+          <div class="about-img">
+            <div class="about-img-bg"></div>
+          </div>
+          <div class="about-info">
+            <h1 class="section-heading inner">ABOUT <span>ME</span></h1>
+            <p>
+              Specialize in building sleek, responsive websites using modern web
+              technologies like HTML, CSS, JavaScript, and React. I build fast,
+              user-friendly websites that work seamlessly on all devices.
+              Whether you are looking for a new design or want to enhance an
+              existing site, I will provide a solution tailored to your needs.
+              Let's work together to bring your vision to life!
+            </p>
+            <a href="./MuhammadFaisal.pdf" target="_blank" class="primary-btn"
+              ><span>Download CV</span></a
+            >
+          </div>
+          <div class="dot-pattern"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h1 class="section-heading">CONTACT <span>INFO</span></h1>
+          <div class="contact-container">
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <h1>Location</h1>
+              <p>Peshawar, Pakistan</p>
+            </div>
+            <div class="contact-card">
+              <i class="fa-brands fa-whatsapp"></i>
+              <h1>WhatsApp</h1>
+              <p>+92 320 9396952</p>
+            </div>
+            <div class="contact-card">
+              <i class="fa-envelope fa-regular"></i>
+              <h1>Email</h1>
+              <p>codebyfaisal@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="chatbot-container">
+      <div class="chatbot close">
+        <div class="chatbot-title">
+          <h1>Devlumen</h1>
+        </div>
+        <div class="chatbox">
+          <div class="chat-msg bot">
+            <div class="icon">
+              <img src="./icons/bot.svg" alt="ai bot icon" />
+            </div>
+            <p class="chat-text">Hi! 👋 How can I help you?</p>
+          </div>
+        </div>
+        <div class="chatbot-footer">
+          <form class="user-msg">
+            <input
+              type="text"
+              name="user-msg"
+              id="user-msg"
+              placeholder="Ask!"
+            />
+            <button type="submit" id="send-btn">
+              <img src="./icons/send.svg" alt="send icon" class="icon" />
+            </button>
+          </form>
+          <p>Powered by Codebyfaisal</p>
+        </div>
+      </div>
+      <button type="button" class="chatbot-btn">
+        <img src="./icons/message.svg" alt="message icon" />
+      </button>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h1 class="logo"><span>C</span>ODEBY<span>F</span>AISAL</h1>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/codebyfaisal" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/codebyfaisal" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/faisalinsights" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/codesbyfaisal" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p>
+            Crafted with <i class="fa-solid fa-heart" style="color: red"></i> by
+            Muhammad Faisal
+          </p>
+          <p>Copyright © 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/chatbot.js"></script>
+    <script
+      src="./js/finisher-header.es5.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      new FinisherHeader({
+        count: 100,
+        size: {
+          min: 2,
+          max: 8,
+          pulse: 0,
+        },
+        speed: {
+          x: {
+            min: 0,
+            max: 4,
+          },
+          y: {
+            min: 0,
+            max: 0.6,
+          },
+        },
+        colors: {
+          background: "#34353A",
+          particles: ["#fbfcca", "#d7f3fe", "#ffd0a7"],
+        },
+        blending: "overlay",
+        opacity: {
+          center: 1,
+          edge: 0,
+        },
+        skew: -6,
+        shapes: ["c", "t"],
+      });
+    </script>
+  </body>
+</html>
