@@ -66,7 +66,7 @@ window.onscroll = throttle(handleScroll, 200);
 // Smooth scrolling for anchor links
 document.querySelectorAll("a[data-scroll-to]").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault();
     const targetSection = document.getElementById(
       this.getAttribute("data-scroll-to")
     );

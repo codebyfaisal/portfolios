@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @font-face {
-  font-family: 'Cascadia Code';
-  src: url('../fonts/Cascadia.woff2') format('woff2'),
-    url('../fonts/Cascadia.woff') format('woff');
+  font-family: "Cascadia Code";
+  src: url("../fonts/Cascadia.woff2") format("woff2"),
+    url("../fonts/Cascadia.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* * ----- Variables ----- */
 :root {
-  --bg-color: #F6F6F6;
-  --text-color: #31333B;
-  --bg-dark-color: #31333B;
-  --text-dark-color: #F6F6F6;
-  --primary-color: #F0BF6C;
+  --bg-color: #f6f6f6;
+  --text-color: #31333b;
+  --bg-dark-color: #31333b;
+  --text-dark-color: #f6f6f6;
+  --primary-color: #f0bf6c;
+  --primary-color: #756cf0;
   --secondary-color: #0792c9;
   --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
 }
@@ -35,7 +38,7 @@ body.dark {
 }
 
 body {
-  font-family: "Cascadia Code", "League Spartan", sans-serif;
+  font-family: "Fira Sans", "Cascadia Code", "League Spartan", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   position: relative;
@@ -305,8 +308,15 @@ body.dark .theme-toggler .dark-theme-icon {
 
 .hero .primary-btn {
   color: var(--bg-color);
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  padding: 0.8rem 1.8rem;
+}
+
+.hero .primary-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 /* * ----- Services ----- */
@@ -474,6 +484,13 @@ body.dark .contact-card {
 .contact-card i {
   font-size: 2.5rem;
   color: var(--primary-color);
+}
+
+.contact-card:hover i.fa-whatsapp {
+  color: #25d366;
+}
+.contact-card:hover p {
+  color: #25d366;
 }
 
 .contact-card p {
@@ -644,7 +661,7 @@ body.dark footer {
     }
   }
 
-  .project>div {
+  .project > div {
     width: 100%;
   }
 
@@ -749,7 +766,6 @@ body.dark footer {
 }
 
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;

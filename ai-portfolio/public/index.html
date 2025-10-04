@@ -16,7 +16,7 @@
     <link href="./styles/chatbot.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="dark">
     <div class="scroll-to-top">
       <i class="fa-solid fa-arrow-up"></i>
     </div>
@@ -50,9 +50,13 @@
           Muhammad Faisal
           <span class="typewriter">Web Developer</span>
         </h1>
-        <a data-scroll-to="projects" class="primary-btn"
-          ><span>Portfolio</span></a
+        <a
+          href="https://wa.me/923123456789"
+          target="_blank"
+          class="primary-btn"
         >
+          <span>Whatsapp <i class="fa-brands fa-whatsapp"></i></span>
+        </a>
       </div>
       <div class="profile-image">
         <img src="./images/profile.webp" alt="MuhammadFaisal image" />
@@ -76,11 +80,10 @@
             </div>
             <div class="service">
               <i class="fa-solid fa-database"></i>
-              <h3>MongoDB Database Solutions</h3>
+              <h3>Database Management/Integration</h3>
               <p>
-                Designing and managing MongoDB databases for efficient data
-                storage, retrieval, and scalability, ensuring your application's
-                data is secure and well-organized.
+                Managing and integrating databases like PostgreSQL, MongoDB, and
+                Prisma, ensuring efficient data storage and retrieval.
               </p>
             </div>
             <div class="service">
@@ -103,11 +106,11 @@
             </div>
             <div class="service">
               <i class="fa-solid fa-cart-shopping"></i>
-              <h3>E-commerce Development</h3>
+              <h3>Business Management System</h3>
               <p>
-                Building secure and scalable e-commerce platforms with Node.js
-                and Express, integrating payment gateways, shopping carts, and
-                dynamic product management.
+                Developing a robust Business Management Systems (BMS, POS, e-commerce, MIS) using
+                Node.js, Express, and PostgreSQL, enabling efficient management
+                of sales, inventory, and customer relations.
               </p>
             </div>
             <div class="service">
@@ -129,9 +132,43 @@
           <div class="projects-container">
             <div class="project">
               <div class="project-info">
+                <h1>E Store - POS</h1>
+                <p>
+                  An all-in-one Business management system - also called
+                  POS(Point of Sale) with online supporting of online store,
+                  providing a robust platform for handling sales, inventory, and
+                  customer relations. Built with a Node.js/Express backend, a
+                  React.js frontend, and a PostgreSQL database.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://e-store-pos.vercel.app/"
+                    target="_blank"
+                    class="primary-btn"
+                    ><span>View Live</span></a
+                  >
+                  <a
+                    href="https://github.com/codebyfaisal/e-store-pos"
+                    target="_blank"
+                    class="secondary-btn"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div class="project-img">
+                <img alt="POS Project" src="./images/project-1.avif" />
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-info">
                 <h1>DevDeep Blog</h1>
                 <p>
-                  DevDeepBlog is a comprehensive full-stack personal blogging platform designed with a sleek, responsive interface. It empowers users to effortlessly create, read, update, and delete blog posts, manage their subscriber base, and seamlessly handle email notifications.
+                  DevDeepBlog is a comprehensive full-stack personal blogging
+                  platform designed with a sleek, responsive interface. It
+                  empowers users to effortlessly create, read, update, and
+                  delete blog posts, manage their subscriber base, and
+                  seamlessly handle email notifications.
                 </p>
                 <div class="project-links">
                   <a
@@ -155,7 +192,7 @@
 
             <div class="project">
               <div class="project-info">
-                <h1>Primebazar🛒✨(Full Stack)</h1>
+                <h1>Primebazar🛒(Full Stack)</h1>
                 <p>
                   Prime Bazaar is a full-stack e-commerce website designed to
                   provide a seamless shopping experience for customers while
@@ -214,38 +251,6 @@
                 <img alt="Restaurant Project" src="./images/project-2.avif" />
               </div>
             </div>
-
-            <div class="project">
-              <div class="project-info">
-                <h1>E-commerce Website</h1>
-                <p>
-                  Fully responsive, multi-page e-commerce website with a
-                  seamless user experience. The project included key features
-                  like an intuitive product catalog, a functional add-to-cart
-                  system, and dynamic product pages. Built with modern frontend
-                  technologies, this project focuses on clean design, smooth
-                  navigation, and fast load times across all devices, ensuring
-                  an engaging shopping experience for users.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://codebyfaisal.github.io/gadgethub/"
-                    target="_blank"
-                    class="primary-btn"
-                    ><span>View Live</span></a
-                  >
-                  <a
-                    href="https://github.com/codebyfaisal/gadgethub"
-                    target="_blank"
-                    class="secondary-btn"
-                    >Source Code</a
-                  >
-                </div>
-              </div>
-              <div class="project-img">
-                <img alt="E-commerce Project" src="./images/project-1.avif" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -266,7 +271,10 @@
               existing site, I will provide a solution tailored to your needs.
               Let's work together to bring your vision to life!
             </p>
-            <a href="./MuhammadFaisal.pdf" target="_blank" class="primary-btn"
+            <a
+              href="./pdf/muhammad-faisal.pdf"
+              target="_blank"
+              class="primary-btn"
               ><span>Download CV</span></a
             >
           </div>
@@ -283,11 +291,13 @@
               <h1>Location</h1>
               <p>Peshawar, Pakistan</p>
             </div>
-            <div class="contact-card">
-              <i class="fa-brands fa-whatsapp"></i>
-              <h1>WhatsApp</h1>
-              <p>+92 320 9396952</p>
-            </div>
+            <a href="https://wa.me/+923209396952" target="_blank">
+              <div class="contact-card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h1>WhatsApp</h1>
+                <p>+92 320 9396952</p>
+              </div>
+            </a>
             <div class="contact-card">
               <i class="fa-envelope fa-regular"></i>
               <h1>Email</h1>
