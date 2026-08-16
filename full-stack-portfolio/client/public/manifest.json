@@ -1,0 +1,17 @@
+{
+  "short_name": "Codebyfaisal",
+  "name": "Codebyfaisal - Full Stack Web Developer Portfolio",
+  "description": "Professional Web Developer Portfolio of Muhammad Faisal (React, Node.js, Web Applications)",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#18181b",
+  "theme_color": "#18181b",
+  "display": "standalone",
+  "orientation": "portrait"
+}
